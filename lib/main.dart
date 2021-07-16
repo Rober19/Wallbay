@@ -1,12 +1,15 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
-import 'package:wallbay/Bloc/categoryWallpaperBloc.dart';
-import 'package:wallbay/Bloc/searchWallpaperBloc.dart';
-import 'package:wallbay/Bloc/wallpaperBloc.dart';
-import 'package:wallbay/Screens/HomePage.dart';
+import 'Bloc/categoryWallpaperBloc.dart';
+import 'Bloc/searchWallpaperBloc.dart';
+import 'Bloc/wallpaperBloc.dart';
+import 'Screens/HomePage.dart';
 import 'package:flutter/services.dart';
+import 'package:flutter_dotenv/flutter_dotenv.dart';
 
-void main() {
+void main() async {
+  await dotenv.load(fileName: ".env");
+
   WidgetsFlutterBinding.ensureInitialized();
 
   SystemChrome.setSystemUIOverlayStyle(SystemUiOverlayStyle.dark.copyWith(
