@@ -9,8 +9,12 @@ import 'package:http/http.dart' as http;
 class SearchWallpaperBloc extends Bloc<WallpaperEvent, WallpaperState> {
   List<Wallpaper> _searchWallpaper = List<Wallpaper>();
 
+  SearchWallpaperBloc(WallpaperState initialState) : super(initialState);
+
   @override
   WallpaperState get initialState => SearchWallpaperIsLoading();
+
+  
 
   @override
   Stream<WallpaperState> mapEventToState(WallpaperEvent event) async* {

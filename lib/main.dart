@@ -27,7 +27,7 @@ class MyApp extends StatelessWidget {
     return BlocProvider(
       create: (context) => WallpaperBloc(),
       child: BlocProvider(
-        create: (context) => SearchWallpaperBloc(),
+        create: (context) => SearchWallpaperBloc(null),
         child: BlocProvider(
           create: (context) => CategoryWallpaperBloc(),
           child: MaterialApp(

@@ -12,6 +12,8 @@ class CategoryWallpaperBloc extends Bloc<WallpaperEvent, WallpaperState> {
   @override
   WallpaperState get initialState => CategoryWallpaperIsLoading();
 
+  CategoryWallpaperBloc() : super(null);
+
   @override
   Stream<WallpaperState> mapEventToState(WallpaperEvent event) async* {
     if (event is CategoryWallpaper) {

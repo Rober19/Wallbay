@@ -12,6 +12,8 @@ class WallpaperBloc extends Bloc<WallpaperEvent, WallpaperState> {
   get initialState => WallpaperIsLoading();
   List<Wallpaper> _wallpaper = List<Wallpaper>();
 
+  WallpaperBloc() : super(null);
+
   @override
   Stream<WallpaperState> mapEventToState(WallpaperEvent event) async* {
     if (event is GetAllWallpaper) {

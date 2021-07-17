@@ -23,8 +23,8 @@ dependencies:
   data_connection_checker: ^0.3.4
   dio: ^3.0.3
   easy_permission_validator: ^1.0.6
-  equatable: ^1.1.1
-  flutter_bloc: ^4.0.0
+  equatable: ^2.0.0
+  flutter_bloc: ^7.0.0
   fluttertoast: ^7.1.6
   getwidget: ^1.2.4
   google_nav_bar: ^2.2.0
