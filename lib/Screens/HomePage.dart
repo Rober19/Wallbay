@@ -35,8 +35,8 @@ class _MyHomePageState extends State<MyHomePage> {
       backgroundColor: Colors.purple.withOpacity(.2),
       iconSize: 24,
       padding: padding,
-      icon: Icons.verified_user,
-      text: "Editor's Choice",
+      icon: Icons.auto_awesome,
+      text: "Good Taste",
     ));
 
     tabs.add(GButton(
@@ -47,7 +47,7 @@ class _MyHomePageState extends State<MyHomePage> {
       backgroundColor: Colors.teal.withOpacity(.2),
       iconSize: 24,
       padding: padding,
-      icon: Icons.category,
+      icon: Icons.four_k,
       text: 'Category',
     ));
   }
@@ -124,7 +124,7 @@ class _MyHomePageState extends State<MyHomePage> {
               child: FloatingActionButton(
                 backgroundColor: Colors.white,
                 child: Icon(
-                  Icons.search,
+                  Icons.manage_search,
                   color: Colors.black,
                 ),
                 onPressed: () {

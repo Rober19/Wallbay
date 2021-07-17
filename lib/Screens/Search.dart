@@ -93,7 +93,7 @@ class _SearchState extends State<Search> {
           );
         } else if (state is SearchWallpaperIsLoading) {
           return Center(
-            child: CircularProgressIndicator(),
+            child: Text("Waiting for search"),
           );
         } else if (state is SearchWallpaperIsLoaded) {
           return GridView.builder(
@@ -124,7 +124,7 @@ class _SearchState extends State<Search> {
                       child: FadeInImage.assetNetwork(
                         image: state.getSearchWallpaper[index].portrait,
                         fit: BoxFit.cover,
-                        placeholder: "image/abstract.jpg",
+                        placeholder: "assets/image/abstract.jpg",
                         imageScale: 1,
                       ),
                     ),
