@@ -36,7 +36,7 @@ class _MyHomePageState extends State<MyHomePage> {
       iconSize: 24,
       padding: padding,
       icon: Icons.verified_user,
-      text: "Editor's Choice",
+      text: "As you like",
     ));
 
     tabs.add(GButton(
